@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/078a78b07e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+         
+        <main class="container mt-5 ">
+            
+             <header> 
+              
+                <svg id="dark-mode" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path class="sun" d="M55 27.5C55 42.6878 42.6878 55 27.5 55C12.3122 55 0 42.6878 0 27.5C0 12.3122 12.3122 0 27.5 0C42.6878 0 55 12.3122 55 27.5Z" fill="#F3C650"/>
+                </svg>  
+                     
+                <h1 class="display-4  mb-5 ">
+                    <i class="fas fa-book-open text-primary"></i>
+                    My<span class="text-primary">Book</span>List
+                </h1>
+             </header>   
+            
+            
+            <div class="divs">
+
+                <div class="alert alert-dismissible alert-warning">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                
+                <p class="mb-0">The Fields Are Empty  !!</p>
+              </div>
+              
+            </div>
+            <form id="book-form" class="container">
+            
+                <div class="form-group">
+                  <label for="title">Title</label>
+                  <input type="text"  id="title" class="form-control title" placeholder="Title Of The Book..">   
+                </div>
+                <div class="form-group">
+                    <label for="author">Author</label>
+                    <input type="text"  id="author" class="form-control author" placeholder="Author's Name ..">   
+                </div>
+                <div class="form-group">
+                    <label for="isbn">ISBN#</label>
+                    <input type="text"  id="isbn" class="form-control isbn" placeholder="ISBN..">   
+                </div>  
+                
+                <input type="submit" class="btn btn-primary btn-block submit">
+                  
+            </form>
+            <table class="table table-hover mt-4 align-self-center ">
+                <thead>
+                  <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">ISBN#</th>
+                    <th scope="col">Delete</th>
+                  </tr>
+                </thead>
+                <tbody id="book-list">
+                  
+                </tbody>
+              </table>
+    
+        </main>
+        
+        <script src="anime.min.js"></script> 
+        <script src="main.js" ></script>
+    </body>
+</html>
